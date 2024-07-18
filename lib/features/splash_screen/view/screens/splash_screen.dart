@@ -15,17 +15,17 @@ class Splash extends StatefulWidget {
 
 class _SplashState extends State<Splash> {
   @override
-  void initState() {
-    super.initState();
-    Timer(const Duration(seconds: 1), () {
-      Navigator.pushNamedAndRemoveUntil(
-          context,
-          MyShared.getBoolean(key: MySharedKeys.onBoarding)
-              ? AppRoutes.loginScreenRoute
-              : AppRoutes.onBoardingScreenRoute,
-          (route) => false);
-    });
-  }
+  // void initState() {
+  //   super.initState();
+  //   Timer(const Duration(seconds: 1), () {
+  //     Navigator.pushNamedAndRemoveUntil(
+  //         context,
+  //         MyShared.getBoolean(key: MySharedKeys.onBoarding)
+  //             ? AppRoutes.loginScreenRoute
+  //             : AppRoutes.onBoardingScreenRoute,
+  //         (route) => false);
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
